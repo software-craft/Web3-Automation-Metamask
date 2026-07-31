@@ -1,0 +1,22 @@
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "description": "synpress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/software-craft"
+  },
+  "license": "ISC",
+  "author": "Leonardo Gabriel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:dev": "env-cmd -f .env-dev.test npx synpress run --config baseUrl=https://google.com" 
+  },
+  "devDependencies": {
+    "@synthetixio/synpress": "^4.1.2",
+    "cypress": "^15.19.0",
+    "env-cmd": "^11.0.0"
+  }
+}
